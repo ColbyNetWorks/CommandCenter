@@ -1,3 +1,4 @@
+[View IT Admin Commands Table](table.md)
 # CommandCenter
 # IT Admin Commands and Troubleshooting Documentation
 
