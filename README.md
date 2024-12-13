@@ -1,11 +1,7 @@
 ## Table of Contents
 
-1. [Phonetic Alphabet](#phonetic-alphabet)
-
----
-
 <details>
-  <summary>Phonetic Alphabet</summary>
+  <summary>1. Phonetic Alphabet</summary>
 
   | **Letter** | **Phonetic Word** | **Letter** | **Phonetic Word** |
   |------------|-------------------|------------|-------------------|
