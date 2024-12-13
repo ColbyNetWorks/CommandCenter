@@ -1,7 +1,9 @@
 # Common IT Commands
 This document contains a list of commonly used IT commands along with their purposes.
 
-```powershell `Connect-ExchangeOnline` ```
+```powershell
+`Connect-ExchangeOnline`
+```
 
 | **Command Name**        | **Purpose/Other**                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
