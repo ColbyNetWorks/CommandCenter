@@ -17,12 +17,12 @@ Set-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnel
 Set-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnels\**VPN NAME**' -Name 'azure_auto_login' -Value '0' -Type DWord -Force -ea SilentlyContinue;
 
 
-
+```
 
 
 ## The Intune install.ps1 & forticlientvpn.msi attached (this was in the intunewin folder (Microsoft-Win32-Content-Prep-Tool-master)
 Install Powershell Script
-
+```powershell
 $PackageName = "FortiClientVPN"
 $Path_local = "$Env:Programfiles\_MEM"
 $Path_local = "$Env:temp"
