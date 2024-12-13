@@ -1,28 +1,27 @@
 # Common IT Commands
-
 This document contains a list of commonly used IT commands along with their purposes.
 
-| **Command Name** | **Purpose/Other** |
-|------------------|-------------------|
-| `Connect-ExchangeOnline` | Install-Module ExchangeOnlineManagement |
+| **Command Name**        | **Purpose/Other**                                                                                       |
+|-------------------------|-------------------------------------------------------------------------------------------------------|
+| ```powershell `Connect-ExchangeOnline` ``` | Install-Module ExchangeOnlineManagement <br> Connect-MicrosoftTeams <br> Hidden from Exchange <br> [Set-UnifiedGroup](https://docs.microsoft.com/en-us/powershell/module/exchange/set-unifiedgroup?view=exchange-ps) -HiddenFromExchangeClientsEnabled:<br>$false & |
 | `Connect-MicrosoftTeams` | Connect to Microsoft Teams |
 | `Set-UnifiedGroup groupname -HiddenFromExchangeClientsEnabled:$false` | Unhide a Unified Group from Exchange Clients |
 | `Microsoft Deployment Toolkit (MDT)` | Download MDT |
 | `register-dnsclient` | Configures DNS client for dynamic updates |
 | `ipconfig /registerdns` | Refreshes DNS records |
 | `wmic product where "name like 'Forti%%'"` | Uninstalls Forti software (reboots PC) |
-| `ssh -i "c:\users\username\sh\productionec2instances.pem" username@10.10.10.10 -p 404` | SSH to a Linux box |
+| `ssh -i "c:\users\username\sh\productionec2instances.pem" `<br>` username@10.10.10.10 -p 404` | SSH to a Linux box |
 | `route print > C:\route_output.txt` | Save route print to a file |
 | `DISM /Online /Cleanup-Image /RestoreHealth` | Clean up Windows image |
-| `dism /Online /Add-Capability /CapabilityName:Print.Fax.Scan~~~~0.0.1.0` | Add fax and scan capabilities to Windows |
+| `dism /Online /Add-Capability`<br>`/CapabilityName:Print.Fax.Scan~~~~0.0.1.0` | Add fax and scan capabilities to Windows |
 | `gpresult /user DOMAIN\username /h c:\Temp\rep.html` | Get Group Policy result for a user |
 | `pathping 192.168.104.42` | Ping path to an IP address |
-| `Add-AppxPackage -Path C:\Users\Username\Downloads\MSTeams-x64.msix` | Install Teams MSXI via PowerShell |
+| `Add-AppxPackage -Path C:\Users\Username\MSTeams-x64.msix` | Install Teams MSXI via PowerShell |
 | `nslookup somehost.sr.com 10.128.80.219` | Test DNS from a specific server |
 | `start-adsyncsynccycle -policytype delta` | Run a delta sync for AD synchronization |
 | `Start-ADSyncSyncCycle -PolicyType Initial` | Run an initial sync for AD synchronization |
 | `nltest /dsgetdc:yourdomain.com` | Test connectivity to the domain controller |
-| `https://graph.microsoft.com/beta/deviceManagement/deviceManagementScripts/d1dace4d-d5b0-40ef-abd2-f36cd2762326` | Use to download script from Intune |
+| `https://graph.microsoft.com/beta/deviceManagement`<br>`/deviceManagementScripts/abd2-f36cd2762326` | Use to download script from Intune |
 | `manage-bde -status` | Get BitLocker status |
 | `manage-bde -protectors -delete C: -Type TPMAndPIN` | Remove BitLocker TPM and PIN protector |
 | `manage-bde -protectors -add C: -TPM` | Add BitLocker TPM protector |
@@ -31,20 +30,19 @@ This document contains a list of commonly used IT commands along with their purp
 | `Get-Recipient` | Select DisplayName, RecipientType, EmailAddresses |
 | `dsregcmd.exe /debug /leave` | Leave Azure AD when local admin doesn’t work |
 | `Win + R msinfo32` | Open system information utility |
-| `Alpha, Bravo, Charlie, Delta, Echo, Foxtrot, Golf, Hotel, India, Juliett, Kilo, Lima, Mike, November, Oscar, Papa, Quebec, Romeo, Sierra, Tango, Uniform, Victor, Whiskey, X-ray, Yankee, Zulu` | Phonetic alphabet |
 | `Change user /install` | Install an application via command |
 | `change user /execute` | Execute an application on RSH server |
 | `Chkdsk /f c` | Check disk for errors |
 | `route print` | Print routing table |
 | `Net Use (see list)` | View or map network drives |
 | `net use G: /delete` | Remove mapped drive G: |
-| `net use G: "\domain.com\DFSR_Data\G_aocdata" /persistent:yes` | Map network drive to DFS share |
+| `net use G: "\domain.com\Data\" /persistent:yes` | Map network drive to DFS share |
 | `Remove-PSDrive -Name G -ErrorAction SilentlyContinue` | Remove mapped drive G |
-| `New-PSDrive -Name G -PSProvider FileSystem -Root "\aoc.ads\DFSR_Data\G_aocdata" -Persist` | Map network drive G via PowerShell |
+| `New-PSDrive -Name G -PSProvider FileSystem -Root "\domain.local\data" -Persist` | Map network drive G via PowerShell |
 | `Install-Module PSWindowsUpdate` | Install the Windows Update module for PowerShell |
 | `Get-WindowsUpdates` | Get a list of available Windows updates |
 | `Install-WindowsUpdates` | Install available Windows updates |
-| `robocopy "C:\Users\username\Downloads" "C:\Users\username\OneDrive\Downloads" /MIR` | Sync files between directories |
+| `robocopy "C:\Users\username\Downloads" "C:\Users\username\dest" /MIR` | Sync files between directories |
 | `tasklist /svc` | Display running services |
 | `whoami` | Display the current user |
 | `Robo copy` | Copy directories using RoboCopy |
