@@ -7,7 +7,8 @@ This document contains a list of commonly used IT commands along with their purp
 
 | **Command Name**        | **Purpose/Other**                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
-| ` ```powershell
+| ` 
+```powershell
 `Connect-ExchangeOnline`
 ```
 | Install-Module ExchangeOnlineManagement <br> Connect-MicrosoftTeams <br> Hidden from Exchange <br> [Set-UnifiedGroup](https://docs.microsoft.com/en-us/powershell/module/exchange/set-unifiedgroup?view=exchange-ps) -HiddenFromExchangeClientsEnabled:<br>$false & |
