@@ -56,7 +56,6 @@
   Start-Process "C:\DeploymentShare\Scripts\LiteTouch.vbs" -ArgumentList "/tasksequence:$TaskSequence"
 ```
 </details>
-
 <details> <summary>Export Shared Mailboxes Script</summary>
 
 # Connect to Exchange Online (if using Exchange Online)
@@ -92,5 +91,4 @@ $sharedMailboxList | Export-Csv -Path "C:\SharedMailboxes.csv" -NoTypeInformatio
 
 # Disconnect from Exchange Online (if applicable)
 Disconnect-ExchangeOnline -Confirm:$false
-</details> 
-```
+</details> ```
