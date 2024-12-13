@@ -20,7 +20,7 @@ Set-ItemProperty -LiteralPath 'HKLM:\SOFTWARE\Fortinet\FortiClient\Sslvpn\Tunnel
 ```
 
 
-## The Intune install.ps1 & forticlientvpn.msi attached (this was in the intunewin folder (Microsoft-Win32-Content-Prep-Tool-master)
+# The Intune install.ps1 & forticlientvpn.msi attached (this was in the intunewin folder (Microsoft-Win32-Content-Prep-Tool-master)
 Install Powershell Script
 ```powershell
 $PackageName = "FortiClientVPN"
