@@ -3,7 +3,7 @@ Welcome to the IT Admin Documentation repository. This contains a comprehensive 
 
 ## Table of Contents
 - [Table](Table.md)
-- [Phonetic Alphabet](Phonetic-Alphabet.md)
+- [Phonetic Alphabet](Phonetic_Alphabet.md)
 - [Export Shared Mailboxes](ExchangeOnline-Export-Shared-Mailboxes.md)
 
 ---
