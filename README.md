@@ -4,6 +4,7 @@ Welcome to the IT Admin Documentation repository. This contains a comprehensive 
 ## Table of Contents
 - [Table](Table.md)
 - [Phonetic Alphabet](#phonetic-alphabet)
+- [Export Shared Mailboxes](ExchangeOnline-Export-Shared-Mailboxes.md)
 
 ---
 
@@ -29,4 +30,3 @@ The phonetic alphabet is used to spell words out loud clearly and avoid confusio
 ---
 
 > **Note**: The phonetic alphabet can help when communicating over the phone, radio, or in noisy environments.
-
