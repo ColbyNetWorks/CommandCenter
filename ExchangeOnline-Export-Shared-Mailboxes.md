@@ -1,33 +1,37 @@
-# Connect to Exchange Online (if using Exchange Online)
-# Remove this section if using on-prem Exchange
-$UserCredential = Get-Credential
-Connect-ExchangeOnline -UserPrincipalName $UserCredential.UserName -ShowProgress $true
+<details>
+  <summary>Export Shared Mailboxes Script</summary>
 
-# Get all shared mailboxes
-$sharedMailboxes = Get-Mailbox -RecipientTypeDetails SharedMailbox
+  ```powershell
+  # Connect to Exchange Online (if using Exchange Online)
+  # Remove this section if using on-prem Exchange
+  $UserCredential = Get-Credential
+  Connect-ExchangeOnline -UserPrincipalName $UserCredential.UserName -ShowProgress $true
 
-# Create an array to store the results
-$sharedMailboxList = @()
+  # Get all shared mailboxes
+  $sharedMailboxes = Get-Mailbox -RecipientTypeDetails SharedMailbox
 
-# Loop through each shared mailbox and retrieve information
-foreach ($mailbox in $sharedMailboxes) {
-    # Get the mailbox name and aliases
-    $name = $mailbox.DisplayName
-    $aliases = $mailbox.EmailAddresses | Where-Object { $_ -like "SMTP:*" } | ForEach-Object { $_.Substring(5) }
+  # Create an array to store the results
+  $sharedMailboxList = @()
 
-    # Get the members (full access users)
-    $members = Get-MailboxPermission -Identity $mailbox.Identity | Where-Object { $_.AccessRights -contains "FullAccess" } | ForEach-Object { $_.User }
+  # Loop through each shared mailbox and retrieve information
+  foreach ($mailbox in $sharedMailboxes) {
+      # Get the mailbox name and aliases
+      $name = $mailbox.DisplayName
+      $aliases = $mailbox.EmailAddresses | Where-Object { $_ -like "SMTP:*" } | ForEach-Object { $_.Substring(5) }
 
-    # Add the mailbox information to the array
-    $sharedMailboxList += [pscustomobject]@{
-        Name    = $name
-        Aliases = ($aliases -join ", ")
-        Members = ($members -join ", ")
-    }
-}
+      # Get the members (full access users)
+      $members = Get-MailboxPermission -Identity $mailbox.Identity | Where-Object { $_.AccessRights -contains "FullAccess" } | ForEach-Object { $_.User }
 
-# Export the results to a CSV file
-$sharedMailboxList | Export-Csv -Path "C:\SharedMailboxes.csv" -NoTypeInformation
+      # Add the mailbox information to the array
+      $sharedMailboxList += [pscustomobject]@{
+          Name    = $name
+          Aliases = ($aliases -join ", ")
+          Members = ($members -join ", ")
+      }
+  }
 
-# Disconnect from Exchange Online (if applicable)
-Disconnect-ExchangeOnline -Confirm:$false
+  # Export the results to a CSV file
+  $sharedMailboxList | Export-Csv -Path "C:\SharedMailboxes.csv" -NoTypeInformation
+
+  # Disconnect from Exchange Online (if applicable)
+  Disconnect-ExchangeOnline -Confirm:$false
