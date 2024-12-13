@@ -1,4 +1,3 @@
-<details>
   <summary>Export Shared Mailboxes Script</summary>
 
   ```powershell
