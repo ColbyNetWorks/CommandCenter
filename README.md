@@ -4,11 +4,17 @@ Welcome to the IT Admin Documentation repository. This contains a comprehensive 
 ## Table of Contents
 - [Table](Table.md)
 - [Phonetic Alphabet](Phonetic_Alphabet.md)
+- Microsoft 365
+  - [Export Shared Mailboxes](ExchangeOnline-Export-Shared-Mailboxes.md)
+
+---
+
+## Microsoft 365
+Microsoft 365 contains a suite of tools and resources to manage Exchange Online, Teams, and more.
+
+### Sub-Topics
 - [Export Shared Mailboxes](ExchangeOnline-Export-Shared-Mailboxes.md)
 
 ---
 
-
----
-
-> **Note**: The phonetic alphabet can help when communicating over the phone, radio, or in noisy environments.
+> **Note**: The phonetic alphabet can help when 
