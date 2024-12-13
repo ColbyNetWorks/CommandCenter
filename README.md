@@ -31,7 +31,7 @@
   [Download MDT](https://www.microsoft.com/en-us/download/details.aspx?id=54259)
 
   ### Example MDT Script:
-  ```powershell
+  
   # Install MDT
   Import-Module "C:\Program Files\Microsoft Deployment Toolkit\Bin\MicrosoftDeploymentToolkit.psd1"
 
@@ -86,4 +86,6 @@
 
   # Disconnect from Exchange Online (if applicable)
   Disconnect-ExchangeOnline -Confirm:$false
+
+```
 
