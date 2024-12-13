@@ -3,10 +3,8 @@
 1. [Phonetic Alphabet](#phonetic-alphabet)
 2. [Microsoft Deployment Toolkit (MDT)](#microsoft-deployment-toolkit-mdt)
 3. [Export Shared Mailboxes Script](#export-shared-mailboxes-script)
-
 ---
 
-##Phonetic Alphabet
 <details>
   <summary>Phonetic Alphabet</summary>
 
