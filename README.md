@@ -1,22 +1,6 @@
-## Table of Contents
+# Table of Contents
 
-<details>
-  <summary>1. Phonetic Alphabet</summary>
-
-  | **Letter** | **Phonetic Word** | **Letter** | **Phonetic Word** |
-  |------------|-------------------|------------|-------------------|
-  | A          | Alpha             | N          | November          |
-  | B          | Bravo             | O          | Oscar             |
-  | C          | Charlie           | P          | Papa              |
-  | D          | Delta             | Q          | Quebec            |
-  | E          | Echo              | R          | Romeo             |
-  | F          | Foxtrot           | S          | Sierra            |
-  | G          | Golf              | T          | Tango             |
-  | H          | Hotel             | U          | Uniform           |
-  | I          | India             | V          | Victor            |
-  | J          | Juliett           | W          | Whiskey           |
-  | K          | Kilo              | X          | X-ray             |
-  | L          | Lima              | Y          | Yankee            |
-  | M          | Mike              | Z          | Zulu              |
-
-</details>
+1. [ExchangeOnline-Export-Shared-Mailboxes.md](ExchangeOnline-Export-Shared-Mailboxes.md)
+2. [Phonetic_Alphabet.md](Phonetic_Alphabet.md)
+3. [README.md](README.md)
+4. [Table.md](Table.md)
