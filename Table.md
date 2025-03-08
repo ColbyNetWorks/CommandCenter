@@ -8,7 +8,11 @@ Note:  Install-Module ExchangeOnlineManagement <br> Connect-MicrosoftTeams <br> 
 
 | **Command Name**        | **Purpose/Other**                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
-| `Connect-MicrosoftTeams` | Connect to Microsoft Teams |
+| 
+```powershell 
+`Connect-MicrosoftTeams`
+```
+ | Connect to Microsoft Teams |
 | `Set-UnifiedGroup groupname -HiddenFromExchangeClientsEnabled:$false` | Unhide a Unified Group from Exchange Clients |
 | `Microsoft Deployment Toolkit (MDT)` | Download MDT |
 | `register-dnsclient` | Configures DNS client for dynamic updates |
