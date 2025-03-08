@@ -1,18 +1,7 @@
-# Common IT Commands
-This document contains a list of commonly used IT commands along with their purposes.
-
-```powershell
-Connect-ExchangeOnline
-```
-Note:  Install-Module ExchangeOnlineManagement <br> Connect-MicrosoftTeams <br> Hidden from Exchange <br> [Set-UnifiedGroup](https://docs.microsoft.com/en-us/powershell/module/exchange/set-unifiedgroup?view=exchange-ps) -HiddenFromExchangeClientsEnabled:<br>$false 
 
 | **Command Name**        | **Purpose/Other**                                                                                       |
 |-------------------------|-------------------------------------------------------------------------------------------------------|
-| 
-```powershell 
-`Connect-MicrosoftTeams`
-```
- | Connect to Microsoft Teams |
+| `Connect-MicrosoftTeams` | Connect to Microsoft Teams |
 | `Set-UnifiedGroup groupname -HiddenFromExchangeClientsEnabled:$false` | Unhide a Unified Group from Exchange Clients |
 | `Microsoft Deployment Toolkit (MDT)` | Download MDT |
 | `register-dnsclient` | Configures DNS client for dynamic updates |
